@@ -1,0 +1,7 @@
+---
+- hosts: tag_Name_scylla_nodes
+  remote_user: ubuntu 
+  become: yes
+  gather_facts: yes
+  roles:
+    - scylla-ansible-role
